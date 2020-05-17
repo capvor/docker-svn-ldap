@@ -6,11 +6,13 @@ ENV AUTH_LDAP_URL '"ldap://host/ou=Users,dc=my-domain,dc=com?uid"'
 ENV AUTH_LDAP_BIND_DN '"cn=Manager,dc=my-domain,dc=com"'
 ENV AUTH_LDAP_BIND_PW '"secret"'
 
+ENV HTTPS_CERT "/etc/ssl/certs/ssl-cert-snakeoil.pem"
+ENV HTTPS_KEY  "/etc/ssl/private/ssl-cert-snakeoil.key"
+
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 # https://linuxize.com/post/how-to-install-apache-on-debian-10/
-# https://www.linode.com/docs/security/ssl/create-a-self-signed-tls-certificate/
 # https://www.linode.com/docs/security/ssl/create-a-self-signed-tls-certificate/
 # https://www.linode.com/docs/websites/hosting-a-website-ubuntu-18-04/
 
