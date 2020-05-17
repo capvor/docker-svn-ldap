@@ -13,6 +13,7 @@ ENV HTTPS_KEY  "/etc/ssl/private/ssl-cert-snakeoil.key"
 ARG DEBIAN_FRONTEND=noninteractive
 
 # https://linuxize.com/post/how-to-install-apache-on-debian-10/
+# https://www.linode.com/docs/security/ssl/ssl-apache2-debian-ubuntu/
 # https://www.linode.com/docs/security/ssl/create-a-self-signed-tls-certificate/
 # https://www.linode.com/docs/websites/hosting-a-website-ubuntu-18-04/
 
