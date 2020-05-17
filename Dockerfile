@@ -14,9 +14,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 # https://www.linode.com/docs/security/ssl/create-a-self-signed-tls-certificate/
 # https://www.linode.com/docs/websites/hosting-a-website-ubuntu-18-04/
 
-RUN \
-    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && \
-    sed -i 's|security.debian.org/debian-security|mirrors.ustc.edu.cn/debian-security|g' /etc/apt/sources.list
+# RUN \
+#     sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && \
+#     sed -i 's|security.debian.org/debian-security|mirrors.ustc.edu.cn/debian-security|g' /etc/apt/sources.list
 
 RUN \
     apt-get -q -y update && \
