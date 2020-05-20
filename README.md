@@ -11,7 +11,7 @@ docker run -d --name my_svnldap \
   -e AUTH_LDAP_URL='"ldap://host/ou=Users,dc=Example?uid"' \
   -e AUTH_LDAP_BIND_DN='"cn=Manager,dc=Example"' \
   -e AUTH_LDAP_BIND_PW='"secret"' \
-  capvor/svnldap
+  capvor/docker-svn-ldap
 ```
 
 https://ip:52121/svn/

@@ -23,8 +23,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN \
     apt-get -q -y update && \
-    apt-get install -q -y procps && \
-    apt-get install -q -y vim-tiny && \
+    apt-get install -q -y procps vim-tiny && \
     apt-get install -q -y subversion apache2 libapache2-mod-svn
 
 COPY svn-site.conf /etc/apache2/sites-available/
