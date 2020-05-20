@@ -39,7 +39,7 @@ RUN \
     a2ensite svn-site.conf && \
     echo '<html><body><a href="/svn/">SVN Repository</a></body></html>' > /var/www/html/index.html && \
     mkdir /var/svn && \
-    chown www-data:www-data /var/svn && \
+    chown -R www-data:www-data /var/svn && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
